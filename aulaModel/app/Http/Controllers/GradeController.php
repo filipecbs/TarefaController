@@ -41,8 +41,8 @@ class GradeController extends Controller
 
         $nota = Grade::findOrFail($id);
 
-        if($request->port)
-            $nota->port = $request->port;
+        if($request->por)
+            $nota->por = $request->por;
         if ($request->eng)
             $nota->eng = $request->eng;
         if ($request->sci)
